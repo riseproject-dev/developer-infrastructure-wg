@@ -21,3 +21,14 @@ Work is tracked on our [project board](https://github.com/orgs/riseproject-dev/p
 - File an [issue](https://github.com/riseproject-dev/developer-infrastructure-wg/issues) to propose work, report a gap, or raise a question
 - Contact us to get involved
 - Have a look at the [project board](https://github.com/orgs/riseproject-dev/projects/16) to see what's in progress
+
+## Projects
+
+* [RISE Build Farm](docs/build-farm/overview.md) — GCC/LLVM CI, kernel CI, Python wheel builder
+* [RISE Board Farm](docs/board-farm.md) — under development
+* [RISE Developer Tools](docs/developer-tools.md)
+
+## Resources
+
+* [Google Drive](https://drive.google.com/drive/folders/1MQ6Fn_5YFUOkyx-avdxsok5dCzdR0qjt)
+* [Mailing List](https://lists.riseproject.dev/g/developer-tooling-wg)
