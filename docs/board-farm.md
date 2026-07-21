@@ -1,3 +1,3 @@
 # RISE Board Farm
 
-Under development. Watch this space!
+Work is happening at [riseproject-dev/board-farm](https://github.com/riseproject-dev/board-farm)
