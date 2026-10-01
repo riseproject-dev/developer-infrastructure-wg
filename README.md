@@ -21,6 +21,7 @@ Work is tracked on our [project board](https://github.com/orgs/riseproject-dev/p
 - File an [issue](https://github.com/riseproject-dev/developer-infrastructure-wg/issues) to propose work, report a gap, or raise a question
 - Contact us to get involved
 - Have a look at the [project board](https://github.com/orgs/riseproject-dev/projects/16) to see what's in progress
+- Request access to this repository through [this form](https://docs.google.com/forms/d/1QQZ5MLxx04lZC21alqI2acgPBJp1uOGzFjQJmrK2aTg)
 
 ## Projects
 
