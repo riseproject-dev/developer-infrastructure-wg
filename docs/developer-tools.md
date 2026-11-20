@@ -2,7 +2,7 @@
 
 ## Cross-Distro Stages & Bootable Developer Images
 
-Nathan Egge and Luca Barbato developed a Gentoo stage builder that provides a modern development and integration test environment for RISC-V Linux software. In November 2026, this workstream expanded into the **Cross-Distro Stages** initiative (co-led by Puneetha Ramachandra, Nathan Egge, and Brian Harrington) to produce automated, continuously tested bootable RISC-V stage images across **Ubuntu, Red Hat, Debian, and Gentoo** paired with board-specific U-Boot and OpenSBI for the [RISC-V Developer Cloud](board-farm.md) and GitHub Actions runners.
+Nathan Egge and Luca Barbato developed a Gentoo stage builder that provides a modern development and integration test environment for RISC-V Linux software. In November 2026, this workstream expanded into the **Cross-Distro Stages** initiative (co-led by Puneetha Ramachandra, Nathan Egge, and Brian Harrington) to produce automated, continuously tested bootable RISC-V stage images across **Ubuntu, Red Hat, Debian, and Gentoo** paired with board-specific U-Boot and OpenSBI for the [RISC-V Developer Cloud](developer-cloud/overview.md) and GitHub Actions runners.
 
 ## Simulator / Emulator (QEMU) Enablement
 

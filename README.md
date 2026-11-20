@@ -29,7 +29,7 @@ Work is tracked on our [project board](https://github.com/orgs/riseproject-dev/p
 * [RISE Build Farm](docs/build-farm/overview.md) — GCC/LLVM CI, Linux kernel CI, Python wheel builder, Yocto `meta-riscv` x86 builder, and `riscv-runner`
   * **[Build Farm Current Status & Server Inventory (`current_status.md`)](docs/build-farm/current_status.md)**
   * **[Build Farm & Developer Tooling 2026 Bi-Weekly Progress Log (`2026_weekly_progress.md`)](docs/build-farm/2026_weekly_progress.md)**
-* [RISC-V Developer Cloud (Board Farm)](docs/board-farm.md) — Physical RISC-V hardware testbed at OSU-OSL ([`riseproject-dev/developer-cloud`](https://github.com/riseproject-dev/developer-cloud))
+* [RISC-V Developer Cloud (formerly Board Farm)](docs/developer-cloud/overview.md) — Physical RISC-V hardware testbed at OSU-OSL ([`riseproject-dev/developer-cloud`](https://github.com/riseproject-dev/developer-cloud))
   * **[Developer Cloud Current Status & Hardware Reference (`current_status.md`)](docs/developer-cloud/current_status.md)**
   * **[Developer Cloud 2026 Weekly Progress Log (`2026_weekly_progress.md`)](docs/developer-cloud/2026_weekly_progress.md)**
 * [RISE Developer Tools & Simulator/Emulator](docs/developer-tools.md) — Cross-distro bootable stage images & upstream QEMU enablement

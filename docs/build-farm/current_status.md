@@ -1,6 +1,6 @@
 # RISE Build Farm & CI Infrastructure — Current Status & Server Reference
 
-> **Last Updated:** 2026-11-17
+> **Last Updated:** 2026-11-20
 > **Bi-Weekly Progress Log:** [`2026_weekly_progress.md`](2026_weekly_progress.md)
 > **Sister Hardware Testbed (OSU-OSL):** [RISC-V Developer Cloud (`riseproject-dev/developer-cloud`)](https://github.com/riseproject-dev/developer-cloud) — see its [`current_status.md`](../developer-cloud/current_status.md) and [`2026_weekly_progress.md`](../developer-cloud/2026_weekly_progress.md)
 >
@@ -38,7 +38,7 @@ The RISE Build Farm operates **19 dedicated `CCX63` instances** on Hetzner Cloud
 
 ### 2.1 Server Allocation & Audit Status (as of November 2026)
 
-*(Hosts are listed by short logical name; full FQDNs, public/private IPv4 and IPv6 addresses, and Hetzner server IDs are recorded in `RISE Build Farm Guide for Administrators (Hetzner Instances)`.)*
+*(Hosts are listed by short name; the full DNS name of each host is `<short-name>.di.riseproject.dev`. Public/private IPv4 and IPv6 addresses and Hetzner server IDs are recorded in `RISE Build Farm Guide for Administrators (Hetzner Instances)`.)*
 
 | Server Group (Count) | Hosts (Short Logical Names) | Primary Workload & WG | Project Leads / Maintainers | Oct/Nov 2026 Audit Status & Active Migration Actions |
 | :--- | :--- | :--- | :--- | :--- |
@@ -73,9 +73,9 @@ In addition to the Hetzner `x86_64` cross-compilation and QEMU test fleet, RISE 
 
 | Service | Provider / Platform | Current Configuration & Operational Notes |
 | :--- | :--- | :--- |
-| **Primary Domain & DNS** | **AWS Route53** (`riseproject.dev`) + **Rackspace Cloud DNS** | A dedicated Build Farm subdomain is delegated from AWS Route53 to Rackspace Cloud DNS *(zone and host records are listed in `RISE Build Farm Guide for Administrators (Hetzner Instances)`)*. |
-| **Artifact & Object Storage** | **Hetzner Object Storage** (`S3`-compatible) | Available for long-term archival of CI artifacts; not currently in use *(bucket details in `RISE Build Farm Guide for Administrators (Hetzner Instances)`)*. |
-| **Telemetry & Monitoring** | **Grafana Cloud** ([`https://riscv.grafana.net/`](https://riscv.grafana.net/)) | Collects Prometheus `node_exporter` metrics across Build Farm and runner hosts *(organization admin list in `RISE Build Farm Guide for Administrators (Hetzner Instances)`)*. |
+| **Primary Domain & DNS** | **AWS Route53** (`riseproject.dev`) + **Rackspace Cloud DNS** (`di.riseproject.dev`) | The `di.riseproject.dev` subdomain is delegated from AWS Route53 to Rackspace Cloud DNS and holds the Build Farm host records *(zone administration notes are in `RISE Build Farm Guide for Administrators (Hetzner Instances)`)*. |
+| **Artifact & Object Storage** | **Hetzner Object Storage** (`S3`-compatible) | Bucket `riscvsoftware`: available for long-term archival of CI artifacts; not currently in use. |
+| **Telemetry & Monitoring** | **Grafana Cloud** ([`https://riscv.grafana.net/`](https://riscv.grafana.net/)) | Collects Prometheus `node_exporter` metrics across Build Farm and runner hosts. Organization admins include Puneetha Ramachandra and Hai Bi. |
 | **Outbound Email / Alerts** | **Mailgun** | Sends automated CI failure notifications and Patchwork alerts. |
 | **Secret & Token Management** | **Transitioning to Shared Secret Manager (`2026-11-06`)** | Moving RISC-V CI and GitHub Actions runner private keys/tokens out of single-admin personal vault storage into a shared multi-admin secret store (**Scaleway Secret Manager** under evaluation first, alongside OIDC Workload Identity Federation options). No secrets or credentials are stored in GitHub repositories. |
 
